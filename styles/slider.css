@@ -1,0 +1,30 @@
+#stack {
+    margin: 30px auto;
+    max-width: 60%;
+    overflow: hidden;
+}
+
+#stack div {
+    display: flex;
+    min-width: 50vw;
+    animation: stack 3s linear infinite;
+}
+
+#stack span {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#stack:hover div {
+    animation-play-state: paused;
+}
+
+@keyframes stack {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}

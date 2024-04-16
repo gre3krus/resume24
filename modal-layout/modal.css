@@ -1,0 +1,137 @@
+#modalOpen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: auto;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 9999;
+  padding: 2vw;
+  min-height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.tabs {
+  position: relative;
+  background: #ffffff;
+  margin: 0 auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 2px 5px 10px rgb(0 0 0 / 5%);
+  min-width: 600px;
+  width: min(100%, 960px);
+
+  border: 1px solid #e0e0e0;
+}
+
+.tabs__nav {
+  height: 80px;
+  background: black;
+  display: flex;
+  /*align-items: stretch;*/
+  justify-content: space-between;
+  padding: 0 30px 0 20px;
+}
+
+.tabs__btn {
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+  padding: 0.5rem 0.75rem;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  flex-shrink: 0;
+  flex-grow: 1;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.tabs__btn_active {
+  background: #e0e0e0;
+  cursor: default;
+}
+
+.tabs__btn:not(.tabs__btn_active):hover,
+.tabs__btn:not(.tabs__btn_active):focus {
+  background-color: #eee;
+}
+
+.tabs__content {
+  padding: 1rem;
+}
+
+.tabs__pane {
+  display: none;
+}
+
+.tabs__pane_show {
+  display: block;
+}
+
+.iframe {
+  --bs-aspect-ratio: calc(9 / 16 * 100%);
+  position: relative;
+  width: 100%;
+}
+
+.iframe::before {
+  display: block;
+  padding-top: var(--bs-aspect-ratio);
+  content: "";
+}
+
+iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+@media (max-width: 600px) {
+  /* #modalOpen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: auto;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 9999;
+    padding: 2vw;
+    min-height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  } */
+
+  .tabs {
+    position: relative;
+    background: #ffffff;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 2px 5px 10px rgb(0 0 0 / 5%);
+    min-width: 10px;
+    width: min(100%, 320px);
+  
+    border: 1px solid #e0e0e0;
+  }
+
+  .tabs__nav {
+    padding: 0 2vw 0 2vw;
+    gap: 5px;
+  }
+
+  .tabs__btn {
+    font-size: 12px;
+  }
+}

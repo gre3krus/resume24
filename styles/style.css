@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(./img/1020.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  max-width: 100vw;
+  /* backdrop-filter: blur(2px); */
+  overflow: hidden;
+}
+
+@media (max-width: 1200px) {
+  body {
+    overflow: scroll;
+  }
+
+  .container {
+    margin: 0vw 5vw 0vw 5vw;
+  }
+}
+
+.container {
+  min-height: 100%;
+  margin: 0vw 5vw 0px 5vw;
+}

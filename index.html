@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Владислав Рыбасов</title>
+  <link rel="stylesheet" href="./styles/style.css" />
+  <link rel="stylesheet" href="./styles/header.css" />
+  <link rel="stylesheet" href="./styles/footer.css" />
+  <link rel="stylesheet" href="./styles/slider.css" />
+  <link rel="stylesheet" href="./styles/footer.css" />
+  <link rel="stylesheet" href="./styles/modal.css">
+  <link rel="stylesheet" href="./modal-layout/modal.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="header-info">
+        <h1>Рыбасов Владислав</h1>
+        <span>Студент; 21.06.2005</span>
+
+        <li><button id="aboutBtn">Обо мне</button></li>
+        <div id="about" style="display: none; flex-direction: column">
+          <p>
+            Программировать начал с языка Python, используя фреймворк Django.
+          </p>
+          <p>
+            Понравилось реализовывать себя в написании сайтов, в частности
+            front.
+          </p>
+          <p>Поэтому решил для себя изучать Frontend разработку</p>
+          <p>Начинал с азов html/css, затем приступил к JavaScript</p>
+          <p>Так же есть небольшой опыт в использовании TypeScript и React</p>
+        </div>
+
+        <li><button id="stackBtn">Мой стек</button></li>
+        <div id="stackBorder" style="display: none;">
+          <div id="stack">
+            <div>
+              <span>
+                <img src="./styles/img/html.svg" alt="html upal" class="imgStack" />
+                <img src="./styles/img/js.svg" alt="js upal" class="imgStack" />
+                <img src="./styles/img/css.svg" alt="css upal" class="imgStack" />
+              </span>
+              <span>
+                <img src="./styles/img/html.svg" alt="html upal" class="imgStack" />
+                <img src="./styles/img/js.svg" alt="js upal" class="imgStack" />
+                <img src="./styles/img/css.svg" alt="css upal" class="imgStack" />
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <li><button id="contactBtn">Связаться</button></li>
+        <div id="contact" style="display: none" ;>
+          <a href="mailto:vladi.sirysno@gmail.com">
+            <button>Почта</button>
+          </a>
+        </div>
+
+        <li><button id="modal">Модалка</button></li>
+        <div id="modalOpen" style="display: none;">
+          <div class="tabs" id="tabs-1">
+            <div class="tabs__nav">
+              <button class="tabs__btn tabs__btn_active">Вкладка 1</button>
+              <button class="tabs__btn">Вкладка 2</button>
+              <button class="tabs__btn">Вкладка 3</button>
+              <button id="close">Закрыть</button>
+            </div>
+            <div class="tabs__content">
+              <div class="tabs__pane tabs__pane_show">
+                <div class="iframe">
+                  <div class="player" id="player-1" data-video-id="4JF7uU2pi_U" data-width="560" data-height="315">
+                  </div>
+                </div>
+              </div>
+              <div class="tabs__pane">
+                <div class="iframe">
+                  <div class="player" id="player-2" data-video-id="71NWP1I7W4Y" data-width="560" data-height="315">
+                  </div>
+                </div>
+              </div>
+              <div class="tabs__pane">
+                <div class="iframe">
+                  <div class="player" id="player-3" data-video-id="FTu_ndnh-wc" data-width="560" data-height="315">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="header-photo">
+        <img src="./styles/img/avatar.png" class="photo" alt="photo error" />
+      </div>
+    </header>
+
+    <!-- <footer>
+        <div class="slider">
+          <img class="mySlides" src="./styles/2048.PNG">
+          <img class="mySlides" src="./styles/bc.PNG">
+          <img class="mySlides" src="./styles/fb.PNG">
+      
+          <button class="btn-left" onclick="plusDivs(-1)">&#10094;</button>
+          <button class="btn-right" onclick="plusDivs(1)">&#10095;</button>
+        </div>
+      </footer> -->
+
+  </div>
+
+  <script src="app.js"></script>
+  <script src="./modal-layout/index.js"></script>
+</body>
+
+</html>
